@@ -3,6 +3,10 @@ from strands import Agent
 from strands.models import BedrockModel
 from strands_tools.a2a_client import A2AClientToolProvider
 
+from dotenv import load_dotenv
+
+load_dotenv(override=True)  # take environment variables
+
 # Grundlegendes Logging einrichten
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

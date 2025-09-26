@@ -4,3 +4,5 @@ strands-agents-tools
 strands-agents[a2a]
 strands-agents-tools[a2a_client]
 ddgs
+streamlit
+nest-asyncio

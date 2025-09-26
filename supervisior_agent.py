@@ -6,6 +6,9 @@ from strands_tools.a2a_client import A2AClientToolProvider # Wichtigster Import!
 
 logging.getLogger("strands").setLevel(logging.INFO)
 
+from dotenv import load_dotenv
+
+load_dotenv(override=True)  # take environment variables
 
 # --- Schritt 1: Definiere, wo die Spezialisten-Agenten zu finden sind ---
 SPECIALIST_AGENT_URLS = [

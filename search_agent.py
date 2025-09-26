@@ -7,6 +7,9 @@ from strands.multiagent.a2a import A2AServer
 
 logging.getLogger("strands").setLevel(logging.INFO)
 
+from dotenv import load_dotenv
+
+load_dotenv(override=True)  # take environment variables
 
 @tool
 def websearch(
